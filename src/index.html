@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página con Bootstrap 5 y SASS</title>
-    <link rel="stylesheet" href="/styles/bootstrap.css">
-</head>
-<body>
-    <div class="container">
-        <img src="imagen.png" alt="Imagen desde public" class="img-fluid">
-        <h1 class="text-primary">Hola, Bootstrap 5!</h1>
-        <p>Esta es una página de ejemplo con estilos personalizados.</p>
-    </div>
-    <script type="module" src="/main.js"></script>
-</body>
+    <link rel="stylesheet" href="/styles/bootstrap.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary container-fluid">
+        <a href="#">
+          <!--Debo modificarlo y dejarlo pequeñito-->
+          <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Vimeo_logo.png" alt="">
+        </a>
+        <div>
+            <a class="navbar-brand">Producto</a>
+            <a class="navbar-brand">Soluciones</a>
+            <a class="navbar-brand">Conocer</a>
+            <a class="navbar-brand">Precio</a>
+            <a class="navbar-brand">Ver</a>
+        </div>
+        <div>
+            <a class="navbar-brand">Comunicarse con ventas</a>
+            <a class="navbar-brand">Iniciar Sesión</a>
+            <button class="btn btn-outline-success" type="button">Unirse</button>
+        </div>
+    </nav>
+      </nav>
+    </header>
+    <main>
+      
+    </main>
+    <footer class="bg-black" style="height: 200px;">
+      <p style="color: white; text-align: center;">© 2025 Vimeo</p>
+  </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
