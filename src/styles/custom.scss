@@ -7,3 +7,144 @@ body {
 .container {
     margin-top: 20px;
 }
+.primerEncabezado{
+    font-size: 5.75rem;
+    font-weight: 500;
+}
+.textoEncabezado{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.videoPortatil{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.fondoImagen{
+    padding-left: 200px;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    border: 3px solid black;
+    color: white;
+    background-image: url(../assets/fondoNegro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    h1{
+        font-size: 3.125rem;
+        letter-spacing: -.15625rem;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+}
+.textllamativo{
+    h3{
+        font-size: 2rem;
+    }
+}
+.carrusel{
+    div{
+        background-color: red;
+    }
+}
+.experiencias{
+    p{
+        font-size: 1.5rem;
+        color: rgb(61, 71, 81);
+    }
+    h1{
+        font-size: 4.5rem;
+        margin-bottom: 48px;
+    }
+}
+.portatilBlock{
+    div.portatilBlock {
+        .block1{
+            padding-bottom: 25px;
+            .imgPortatil{
+                img{
+                    width: 100%;
+                    border-radius: 30px;
+                }
+                
+            }
+            align-items: center;
+            div.bottom15 {
+                padding: 44px 56px;
+                h3{
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 1.25rem;
+                    letter-spacing: -0.0375rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .block2{
+            .imgBlock21{
+                img{
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+            .imgBlock22{
+                img{
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .block3{
+            .col{
+                padding: 44px 56px;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                    letter-spacing: -0.0375rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .block4{
+            .imgBlock41{
+                img{
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+            .imgBlock42{
+                img{
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .block5{
+            .col{
+                padding: 44px 56px;
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                    letter-spacing: -0.0375rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}
+.flujo{
+    p{
+        font-size: 1.5rem;
+        letter-spacing: -.045rem;
+    }
+    
+}
