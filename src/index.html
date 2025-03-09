@@ -3,239 +3,600 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página con Bootstrap 5 y SASS</title>
+    <title>Prac-3 Vimeo</title>
     <link rel="stylesheet" href="/styles/bootstrap.css" />
   </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
   <body>
-    <header>
-      <nav class="navbar bg-body-tertiary container-fluid">
-        <a href="#">
-          <!--Debo modificarlo y dejarlo pequeñito-->
-          <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Vimeo_logo.png" alt="">
-        </a>
+    <section class="section-1 container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg justify-content-center">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto menu1">
+                <li class="nav-item align-items-center mx-4">
+                  <img
+                    src="public/Vimeo_logo.png"
+                    alt=""
+                    style="width: 100px"
+                  />
+                </li>
+                <li class="nav-item dropdown mt-2 efe1">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Producto
+                  </a>
+                  <ul class="dropdown-menu">
+                    <div id="menu3" class="container-fluid text-center d-flex">
+                      <div class="row align-items-start">
+                        <div class="col">
+                          <a class="enlace-drop" href="">
+                            <span class="title">Alojamiento y reproductor</span>
+                          </a>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="fa-solid fa-play p-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Reproductor de video
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="fa-solid fa-cloud-arrow-up p-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Alojamiento de videos
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <span>Creación y Edición</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="fa-solid fa-play p-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Reproductor de video
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="fa-solid fa-cloud-arrow-up p-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Alojamiento de videos
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <span>Monetización de videos</span>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="fa-solid fa-play p-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Reproductor de video
+                            </p>
+                          </div>
+                          <div class="d-flex text-center align-items-center">
+                            <i class="fa-solid fa-cloud-arrow-up p-2"></i>
+                            <p class="text-center align-items-center mt-3">
+                              Alojamiento de videos
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown mt-2">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Soluciones
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown mt-2">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Conocer
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item mt-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Precio</a
+                  >
+                </li>
+                <li class="nav-item mt-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Ver</a
+                  >
+                </li>
+
+                <!-- parte derecha navbar -->
+              </ul>
+              <div class="d-flex justify-content-end menu2">
+                <ul class="navbar-nav mb-2">
+                  <li class="nav-item mt-2">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Comunicarse con Ventas</a
+                    >
+                  </li>
+                  <li class="nav-item mt-2">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Iniciar sesión</a
+                    >
+                  </li>
+                  <!-- BOTON UNIRSE--------------------- -->
+                  <li class="nav-item mt-1">
+                      <a href="#" class="button">
+                          <span>Unirse</span>
+                          <div class="flecha-container">
+                               <i class="fa-solid fa-arrow-right flecha"></i>
+                                <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                          </div>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <!-- seccion 2 -------------------------------->
+
+    <section class="section2 container-fluid">
+      <article class="article2">
+        <h2>Haga más con sus videos</h2>
+        <p>
+          Conozca la plataforma de video completa que puede transformar su
+          manera de hacer negocios.
+        </p>
+
+        <div class="botones-seccion2">
+          <ul class="d-flex justify-content-center">
+            <li class="nav-item mx-1 my-3">
+              <a href="#" class="button">
+              <span>Ver Planes</span>
+                <div class="flecha-container">
+                    <i class="fa-solid fa-arrow-right flecha"></i>
+                    <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                </div>
+              </a>
+            </li>
+            
+            <li class="nav-item mx-1 my-3">
+                <a href="#" class="button">
+                    <span>Unirse Gratis</span>
+                    <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                    </div>
+                </a>
+            </li>
+          </ul>
+
+        </div>
+      </article>
+      <div class="container-portatil">
+        <video
+          id="mi-video"
+          width="800"
+          height="700"
+          controls
+          loop
+          autoplay
+          muted
+        >
+          <source src="public/videoBucle.mp4" type="video/mp4" />
+        </video>
+        <img class="laptot" src="public/portatil.avif" alt="" />
+      </div>
+    </section>
+
+    <!--  seccion 3 -->
+    <section class="section3 container-fluid">
+      <!-- article con una imagen de fondo que ocupe todo el ancho de la pagina -->
+      <article class="article3">
+        <div class="background-image">
+          <h3>Su paquete completo de herramientas de video</h3>
+          <p>
+            Obtenga todo lo que necesita para editar, gestionar y publicar
+            videos impactantes que generen resultados.
+          </p>
+          <div class="botones-seccion3">
+            <ul class="d-flex justify-content-center">
+              <li class="nav-item mx-1 my-3">
+                <a
+                  class="nav-link btn"
+                  aria-current="page"
+                  href="#"
+                  >Solicitar una demostración
+                  <i class="fa-solid fa-arrow-right mx-2"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECCION 4 corredor de marcas -->
+    <section class="container-fluid section4">
+      <article>
+        <h3>
+          La plataforma de confianza de 287 millones de creadores, empresarios y
+          negocios.
+        </h3>
+        <div class="">
+          <!-- cinta corredera de imagenes -->
+          <div class="d-flex justify-content-center cinta">
+            <img src="public/asana.avif" alt="" />
+            <img src="public/deloitte.avif" alt="" />
+            <img src="public/riteaid.avif" alt="" />
+            <img src="public/santander.avif" alt="" />
+            <img src="public/wb.avif" alt="" />
+            <img src="public/zendesk.avif" alt="" />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECCION 5  -->
+    <section class="section5 container-fluid">
+      <aside>
+        <p>Las mejores experiencias de video en Internet, en un mismo lugar</p>
+        <h2>Su plataforma de video impulsada por IA</h2>
+      </aside>
+    </section>
+
+    <!-- SECCION 6 -->
+    <section class="section6 container-fluid">
+      <article class="container d-flex">
+        <img
+          src="https://i.vimeocdn.com/custom_asset/396c8ea0b0abec01f561e170698bdb8a?q=1"
+          alt=""
+        />
         <div>
-            <a class="navbar-brand">Producto</a>
-            <a class="navbar-brand">Soluciones</a>
-            <a class="navbar-brand">Conocer</a>
-            <a class="navbar-brand">Precio</a>
-            <a class="navbar-brand">Ver</a>
+          <h2>Alojamiento y reproductor</h2>
+          <p>
+            Aloje sus videos con nuestro reproductor HD sin anuncios.
+            Dondequiera que los inserte o comparta, su diseño de reproductor
+            personalizado y su marca los acompañarán.
+          </p>
+          <!-- falta boton -->
         </div>
+      </article>
+
+      <!-- bloque justo debajo -->
+      <aside class="container">
+        <div class="container">
+          <div class="bloque d-flex">
+            <div class="col">
+              <img src="public/imgAside.png" alt="" />
+              <h3>Creación y edición</h3>
+              <p>
+                Cree y edite sus videos con nuestras sencillas herramientas.
+                Agregue efectos, texto y más para que sus videos se destaquen.
+              </p>
+              <div class="botones-seccion6">
+                <ul class="btn1">
+                  <li class="nav-item mx-1 my-3">
+                    <a href="#" class="button">
+                      
+                      <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <img src="public/img2Aside.png" alt="" />
+              <h3>Transmisiones en vivo y eventos</h3>
+              <p>
+                Transmita sus eventos en vivo o alójelos on-demand. Nuestras
+                herramientas le permiten compartir fácilmente su contenido con
+                el resto del mundo.
+              </p>
+              <!-- boton flecha -->
+              <div class="botones-seccion6">
+                <ul class="mt-5">
+                  <li class="nav-item mx-1 my-3">
+                    <a href="#" class="button">
+                      <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- parte 2 seccion -->
+      <aside class="container">
+        <div class="container">
+          <div class="bloque d-flex">
+            <div class="col">
+              <img src="public/imgAside.png" alt="" />
+              <h3>Creación y edición</h3>
+              <p>
+                Cree y edite sus videos con nuestras sencillas herramientas.
+                Agregue efectos, texto y más para que sus videos se destaquen.
+              </p>
+              <div class="botones-seccion6">
+                <ul class="btn1">
+                  <li class="nav-item mx-1 my-3">
+                    <a href="#" class="button">
+                      
+                      <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <img src="public/img2Aside.png" alt="" />
+              <h3>Transmisiones en vivo y eventos</h3>
+              <p>
+                Transmita sus eventos en vivo o alójelos on-demand. Nuestras
+                herramientas le permiten compartir fácilmente su contenido con
+                el resto del mundo.
+              </p>
+              <!-- boton flecha -->
+              <div class="botones-seccion6">
+                <ul class="mt-5">
+                  <li class="nav-item mx-1 my-3">
+                    <a href="#" class="button">
+                      <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SECCION 7 -->
+    <section class="section7 container-fluid">
+      <aside>
+        <p>Mejor flujo de trabajo, mejores resultados</p>
+        <h2>Herramientas de video para potenciar cualquier negocio</h2>
+      </aside>
+    </section>
+
+    <!-- SECCION 6 -->
+    <section class="section6 container-fluid">
+      <article class="container d-flex">
+        <img
+          src="public/sec7img.png"
+          alt=""
+        />
         <div>
-            <a class="navbar-brand">Comunicarse con ventas</a>
-            <a class="navbar-brand">Iniciar Sesión</a>
-            <button class="btn btn-outline-success" type="button">Unirse</button>
+          <h2>Seguridad y cumplimiento</h2>
+          <p>
+            Tanto si es una empresa de Fortune 500, una startup o una
+            organización de otro tipo, descanse tranquilo sabiendo que sus datos
+            están seguros y logre sus objetivos de cumplimiento con nuestras
+            herramientas de seguridad integrales.
+          </p>
+          
+          <div class="botones-seccion6">
+            <ul class="btn1">
+              <li class="nav-item mx-1 my-3">
+                <a href="#" class="button">
+                  
+                  <div class="flecha-container">
+                    <i class="fa-solid fa-arrow-right flecha"></i>
+                    <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+           
         </div>
-    </nav>
-      </nav>
-    </header>
-    <main>
-      <main>
-        <div class="container">
-            <div class="row text-center">
-                <h1 class="primerEncabezado">Haga más con sus videos</h1>
-                <p class="textoEncabezado">Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</p>
-                <div class="container-fluid">
-                    <button class="btn btn-outline-success" type="button">Ver los planes</button>
-                    <button class="btn btn-outline-success" type="button">Unirse gratis</button>
-                </div>
-            </div>
-        </div>
-        <!--IMAGENES-->
-        <div class="container videoPortatil">
-            <img src="assets/pcAnimado.png">
-        </div>
-        <!-- Fondo negro es una imagen que utilizamos de fondo-->
-        <div class="fondoImagen">
-            <div class="container">
-                <h1>Su paquete completo de herramientas de video</h1>
-                <p>Obtenga todo lo que necesita para editar, gestionar y publicar videos impactantes que generen resultados.</p>
-                <button class="btn btn-outline-success" type="button">Ver los planes</button>
-            </div>
-        </div>
+      </article>
+    </section>
 
-        <div class="textllamativo container text-center">
-            <h3>La plataforma de confianza de 287 millones<br> de creadores, empresarios y negocios</h3>
-        </div>  
-        <!--IMAGENES DEL CARRUSEL-->
-        <div class="carusel">
-            <div class="text-center">
-                <img src="assets/logos/deloitte.png">
-                <img src="assets/logos/riteaid.png">
-                <img src="assets/logos/santander.png">
-                <img src="assets/logos/WB.png">
-                <img src="assets/logos/zendesk.png">
+    <aside class="container-section7">
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <img src="public/miniImgSec7.png" alt="">
+            <h3>Analisis</h3>
+            <p>Nuestros análisis avanzados de video en vivo y on-demand lo ayudan a comprender el comportamiento de los espectadores y a hacer los cambios 
+              necesarios para lograr mejores resultados en el futuro.</p>
+              
+          </div>
+          <div class="col">
+            <img src="public/miniImg2Sec7.png" alt="">
+            <h3>Privacidad</h3>
+            <p>Elija exactamente quién puede ver su video incluso antes de que termine de subirlo. 
+              Compártalo solo con determinadas personas, protéjalo con una contraseña u ocúltelo a todo el mundo excepto usted.</p>
+             
+          </div>
+          <div class="col">
+            <img src="public/miniImg3Sec7.png" alt="">
+            <h3>Gestión de accesos</h3>
+            <p>Controle el acceso con SSO, agregando dominios a la lista blanca e insertando restricciones, y gestione permisos detallados de usuarios con SCIM.</p>
+          
+          </div>
+          
+        </div>
+      </div>
+    </aside>
+
+    <!-- 3 columnas con clases bootstrap -->
+     <section class="section8 container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="botones-seccion6">
+              <ul class="btn1">
+                <li class="nav-item mx-1 my-3">
+                  <a href="#" class="button">
+                    
+                    <div class="flecha-container">
+                      <i class="fa-solid fa-arrow-right flecha"></i>
+                      <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div class="col">
+              <div class="botones-seccion6">
+                <ul class="btn1">
+                  <li class="nav-item mx-1 my-3">
+                    <a href="#" class="button">
+                      
+                      <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+            <div class="col">
+              <div class="botones-seccion6">
+                <ul class="btn1">
+                  <li class="nav-item mx-1 my-3">
+                    <a href="#" class="button">
+                      
+                      <div class="flecha-container">
+                        <i class="fa-solid fa-arrow-right flecha"></i>
+                        <i class="fa-solid fa-arrow-right flecha duplicada"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+     </section>
+
+
+
+    <!-- SECCION 9 -->
+    <section class="section9 container-fluid">
+      <article class="container text-center">
+        <header>
+          <h3>Casos de uso</h3>
+          <h1>Cómo utilizan Vimeo los clientes</h1>
+        </header>
+        <div class="container text-center">
+          <div class="col">
+            <div class="row align-items-start">
+              <div class="col ">
+                <img src="https://i.vimeocdn.com/custom_asset/3b519a6d03c716419d34270adc3a7889?w=1408&q=80" alt="">
+              </div>
+              <div class="col">
+                <img src="https://i.vimeocdn.com/custom_asset/3cb41dceafd91acc5f09269d42abff7d?w=1408&q=80" alt="">
+              </div>
+              <div class="col">
+                <img src="https://i.vimeocdn.com/custom_asset/e0dab8beb6c817de5b52637aae31b7c1?w=1408&q=80" alt="">
+              </div>
             </div>
         </div>
+          
+      </article>
 
-        <div class="container text-center experiencias">
-            <p>Las mejores experiencias de video en Internet, en un mismo lugar</p>
-            <h1>Su plataforma de video<br> impulsada por IA</h1>
-        </div>
-        
-        <!--IMAGENES-->
-        <div class="container portatilBlock">
-            <div class="row block1">
-                <div class="col-6 imgPortatil">
-                    <img src="assets/portatil.png" alt="">
-                </div>
-                <!-- DEBO PONER UNA CLASE PARA HACER QUE SE VEA ESTE CACHO-->
-                <div class="col-6 bottom15">
-                    <h3>Alojamiento y reproductor</h3>
-                    <p>Aloje sus videos con nuestro reproductor HD sin anuncios. Dondequiera que los inserte o comparta, su diseño de reproductor personalizado y su marca los acompañarán.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-            </div>
-            <!--IMAGENES-->
-            <div class="row block2">
-                <div class="col-6 imgBlock21">
-                    <img src="assets/editor.png" alt="">
-                </div>
-                <div class="col-6 imgBlock22">
-                    <img src="assets/llamada.png" alt="">
-                </div>
-            </div>
 
-            <div class="row block3">
-                <div class="col">
-                    <h3>Creación y edición</h3>
-                    <p>Cree y edite sus videos con nuestras sencillas herramientas. Agregue efectos, texto y más para que sus videos se destaquen.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-                <div class="col">
-                    <h3>Transmisiones en vivo y eventos</h3>
-                    <p>Transmita sus eventos en vivo o alójelos on-demand. Nuestras herramientas le permiten compartir fácilmente su contenido con el resto del mundo.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-            </div>
-            <!--IMAGENES-->
-            <div class="row block4">
-                <div class="col imgBlock41">
-                    <img src="assets/libreria.png" alt="">
-                </div>
-                <div class="col imgBlock42">
-                    <img src="assets/imagenes.png" alt="">
-                </div>
-            </div>
 
-            <div class="row block5">
-                <div class="col">
-                    <h3>Gestión de video</h3>
-                    <p>Mantenga sus videos organizados y seguros. Nuestras herramientas facilitan la gestión de su videoteca y mantienen su contenido seguro.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-                <div class="col">
-                    <h3>Monetización</h3>
-                    <p>Gane dinero con sus videos con nuestras herramientas de monetización. Agregue anuncios, suscripciones y más a sus videos.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-            </div>
-        </div>
 
-        <div class="container text-center flujo">
-            <p>Mejor flujo de trabajo, mejores resultados</p>
-            <h1>Herramientas de video para potenciar cualquier negocio</h1>
-        </div>
-        <!--IMAGENES-->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="assets/portatil2.png" alt="">
-                </div>
-                <div class="col">
-                    <h3>Seguridad y cumplimiento</h3>
-                    <p>Tanto si es una empresa de Fortune 500, una startup o una organización de otro tipo, descanse tranquilo sabiendo que sus datos están seguros y logre sus objetivos de cumplimiento con nuestras herramientas de seguridad integrales.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-            </div>
+      <!-- FOOTER -->
 
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/analitica.png" alt="">
-                    <h3>Análisis</h3>
-                    <p>Nuestros análisis avanzados de video en vivo y on-demand lo ayudan a comprender el comportamiento de los espectadores y a hacer los cambios necesarios para lograr mejores resultados en el futuro.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/movil.png" alt="">
-                    <h3>Privacidad</h3>
-                    <p>Elija exactamente quién puede ver su video incluso antes de que termine de subirlo. Compártalo solo con determinadas personas, protéjalo con una contraseña u ocúltelo a todo el mundo excepto usted.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/cuentas.png" alt="">
-                    <h3>Gestión de accesos</h3>
-                    <p>Controle el acceso con SSO, agregando dominios a la lista blanca e insertando restricciones, y gestione permisos detallados de usuarios con SCIM.</p>
-                    <button class="btn-primary btn" type="button">-></button>
-                </div>
+      <footer class="container-fluid">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <h2>Probar gratis</h2>
+              <ul>
+                <li>Precio</li>
+                <li>Comunicaciones con Ventas</li>
+                <li>Ver demostraciones</li>
+              </ul>
+              <!-- btn unirse -->
+            </div>
+            <div class="col">
+              <h2>Atención al cliente 24x7</h2>
+              <p>Nuestro equipo de asistencia al cliente está disponible las 24 horas, los 7 días de la semana. 
+                Los miembros de Enterprise también tienen
+                 acceso a administradores de cuentas especializados y a un ANS de tiempo de actividad garantizado.
+              </p>
+              <!-- boton contacto -->
             </div>
             
+          </div>
         </div>
-        <!--IMAGENES-->
-        <div class="fondoBlanco">
-            <div class="container">
-                <p>Casos de uso</p>
-                <h1>Cómo utilizan Vimeo los clientes</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/video1.png" alt="">
-                        <p><strong>Morgan Cooper</strong></p>
-                        <p>Este director destacado, tres veces elegido por el personal, comparte sus cortometrajes profundamente personales e impactantes con Vimeo.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/video1.png" alt="">
-                        <p><strong>Vermicular</strong></p>
-                        <p>La inversión en video de Vermicular impulsa el alcance global y crea activos de marketing reutilizables.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/video1.png" alt="">
-                        <p><strong>Stellantis</strong></p>
-                        <p>Con 300 000 empleados en todo el mundo, Stellantis confía en Vimeo para su enseñanza virtual basada en video a nivel mundial.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+      </footer>
 
-        <div class="container text-center">
-            <p>Integraciones con Vimeo</p>
-            <h1>Agilice el flujo de trabajo</h1>
-            <!--FALTA CARRUSEL-->
-            <button class="btn-primary btn" type="button">Explorar todas las integraciones</button>
-        </div>
-        <!--IMAGENES-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1>Descubra lo más reciente de Vimeo</h1>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="assets/portatil3.png " alt="">
-                        </div>
-                        <div class="col-md-8">
-                            <p class="etiqueta">Lanzamiento del T3 2024</p>
-                            <p>Explore nuestras funciones nuevas y actualizadas</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-4">
-                            <img src="assets/portatil4.png " alt="">
-                        </div>
-                        <div class="col-md-8">
-                            <p class="etiqueta">Lanzamiento del T3 2024</p>
-                            <p>Explore nuestras funciones nuevas y actualizadas</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </main>
-    </main>
-    <footer class="bg-black" style="height: 200px;">
-      <p style="color: white; text-align: center;">© 2025 Vimeo</p>
-  </footer>
-    <script type="module" src="./main.js"></script>
+
+
+
+    <script type="module" src="/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c5ee713d6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
